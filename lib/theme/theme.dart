@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 
 // 🌎 Project imports:
-import 'package:dr_duke_shared/style/theme/data/size.dart';
 import 'data/color/color.dart';
 import 'data/radius.dart';
 import 'data/shadow.dart';
+import 'data/size.dart';
 import 'data/spacing.dart';
 import 'data/typography.dart';
 

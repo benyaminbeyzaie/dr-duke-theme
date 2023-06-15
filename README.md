@@ -1,39 +1,38 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Dr. Duke Theme
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+design system provides a set of reusable styles and components for consistent and efficient app development. It includes predefined colors, typography, spacing, shadows, and radius values to maintain a cohesive visual language across our apps.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Access
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Access the predefined styles and components through the DukeTheme instance:
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+```dart
+Colors: duketheme.color
+Typography: duketheme.typography
+Spacing: duketheme.spacing
+Radius: duketheme.radius
+Shadows: duketheme.shadow
+Size: duketheme.size
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:dr_duke_shared/style/theme/theme.dart';
+
+Container(
+  height: context.duketheme.size.xs,
+  margin: context.duketheme.spacing.xd,
+  decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(context.duketheme.radius.lg),
+        color: context.duketheme.color.primary,
+        boxShadow: [context.dukeTheme.shadow.cardShadow],
+      ),
+  child: Text(
+         'Hello World!',
+         style: context.duketheme.typography.headline,
+         ),
+  ),
+
+
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
