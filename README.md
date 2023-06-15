@@ -18,7 +18,7 @@ Size: duketheme.size
 ## Usage
 
 ```dart
-import 'package:dr_duke_shared/style/theme/theme.dart';
+import 'package:dr_duke_theme/theme/theme.dart';
 
 Container(
   height: context.duketheme.size.xs,
