@@ -14,6 +14,6 @@ class DukeRadius {
   ///24.0
   final double xlg = 24.0;
 
-  ///24.0
+  ///36.0
   final double xxlg = 36.0;
 }
