@@ -68,7 +68,7 @@ class LightColor extends DukeColor {
   Color get warning => const Color(0xffFFB800);
 
   @override
-  Color get warningLight => const Color(0xff6B6E72);
+  Color get warningLight => const Color(0xFFFFF8E1);
 
   @override
   Color get divider => const Color(0xffEBECF2);
