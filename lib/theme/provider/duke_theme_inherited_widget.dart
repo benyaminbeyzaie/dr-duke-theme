@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 import '../theme.dart';
 
 class DukeThemeInheritedWidget extends InheritedWidget {
-  const DukeThemeInheritedWidget(
-      {super.key, required this.dukeTheme, required this.setDukeTheme, required super.child,});
+  const DukeThemeInheritedWidget({
+    super.key,
+    required this.dukeTheme,
+    required this.setDukeTheme,
+    required super.child,
+  });
 
   final DukeTheme dukeTheme;
   final void Function(DukeTheme) setDukeTheme;
