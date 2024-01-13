@@ -1,5 +1,6 @@
 // 🐦 Flutter imports:
 import 'package:flutter/material.dart';
+import '../provider/numbers_lan_enum.dart';
 
 import 'color/color.dart';
 
@@ -53,15 +54,26 @@ class DukeTypography {
   static TextStyle? _parent;
 
   final BuildContext context;
+  final NumbersLanEnum numLan;
 
-  DukeTypography(this.context) {
+  DukeTypography(this.context, this.numLan) {
     final brightness = Theme.of(context).brightness;
     final color = DukeColor(brightness);
 
-    _parent = TextStyle(
-      fontFamily: 'IranSansXFaNum',
-      color: color.neutralText,
-    );
+    switch (numLan) {
+      case NumbersLanEnum.fa:
+        _parent = TextStyle(
+          fontFamily: 'IranSansXFaNum',
+          color: color.neutralText,
+        );
+        break;
+      case NumbersLanEnum.en:
+        _parent = TextStyle(
+          fontFamily: 'IranSansX',
+          color: color.neutralText,
+        );
+        break;
+    }
 
     xxsText = _parent!.copyWith(
       fontWeight: FontWeight.w500,
