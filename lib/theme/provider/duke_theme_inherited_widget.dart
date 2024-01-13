@@ -4,9 +4,10 @@ import '../theme.dart';
 
 class DukeThemeInheritedWidget extends InheritedWidget {
   const DukeThemeInheritedWidget(
-      {super.key, required this.dukeTheme, required super.child});
+      {super.key, required this.dukeTheme, required this.setDukeTheme, required super.child,});
 
   final DukeTheme dukeTheme;
+  final void Function(DukeTheme) setDukeTheme;
 
   static DukeThemeInheritedWidget? maybeOf(BuildContext context) {
     return context

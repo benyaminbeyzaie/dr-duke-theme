@@ -27,6 +27,7 @@ class _DukeThemeProviderState extends State<DukeThemeProvider> {
     }
     return DukeThemeInheritedWidget(
       dukeTheme: dukeTheme,
+      setDukeTheme: setDukeTheme,
       child: widget.child,
     );
   }
